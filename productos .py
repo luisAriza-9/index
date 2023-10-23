@@ -1,0 +1,1 @@
+{"25": {"Nombre": "papita rika", "Valor": 12000, "IVA": 0}}
