@@ -1,65 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORMULARIO</title>
+    <title>SRV 04 Formularios</title>
 </head>
+
 <body>
-    <br><br>
-    <h1 align = "center">CAMPUS LAB Ejercicio FORMULARIOS</h1>    
-    
-
-    <br><br>
-                Indique preferencia porfavor 
-    
-<br>
-
-    
-
-<label for="fechanac"> Elija una fecha  : </label>
-    <input type="date" name="fechanac" ide ="fechanac" max="1999-12-31">
-    
-    
-    <br><br>
-    <label for="fechanac">Elija un fichero  : </label>
-    <input type="date" name="fechanac" ide ="fechanac" min="">
-    
-    <br><br>
-    
-    
-<input type="checkbox" name="Pasatiempos" id="">
-<label for="AMD">Leer</label>
-<input type="checkbox" name="Pasatiempos" id="">
-<label for="Intel i5">Cine</label>
-<input type="checkbox" name="Pasatiempos" id="">
-<label for="">Gym</label><br>
-
-<br>
-
-
-
-    <br><br>
-    <label for="fechanac">Elija un fichero  : </label>
-    <input type="date" name="fechanac" ide ="fechanac" min="">
-    
-    <br><br>
-Indique preferencias por favor
-<br>
-<input type="checkbox" name="Pasatiempos" id="Matematica">
-<label for="leer">Leer</label>
-<input type="checkbox" name="Pasatiempos" id="Histori">
-<label for="cine">Cine</label>
-<input type="checkbox" name="Pasatiempos" id="Geografi">
-<label for="gym">Gym</label>
-<input type="checkbox" name="Pasatiempos" id="Lengu">
-<label for="comer">Comer</label>
-
-<br>
-<input type="button" value="Ver mensaje" onclick="alert('Feliz Halloween')">
-<br><br>
-<label for="colorFav">Elija un color: </label>
-<input type="color" name="colorFav" id="colorFav">
+    <form action="https://www.google.com/search" method="post"></form>
+    <fieldset>
+        <legend>Indique sus preferencias por favor</legend>
+        <label for="fecha">Elija una fecha:</label>
+        <input type="date" name="fecha" id="fecha">
+        <br><br>
+        <label for="archivo">Elija un fichero</label>
+        <input type="file" name="archivo" id="archivo" accept=".png,.jpg.,gif">
+        <br><br>
+        <input type="radio" name="lengprog" id="AMD" value="AMD">
+        <label for="lengprog">AMD</label>
+        <input type="radio" name="lengprog" id="Intel i5" value="Intel i5">
+        <label for="lengprog">Intel i5</label>
+        <input type="radio" name="lengprog" id="Intel i7" value="Ada">
+        <label for="lengprog">Intel i7</label>
+    </fieldset>
+    <fieldset>
+        <legend>Indique sus preferencias por favor</legend>
+        <input type="checkbox" name="lengprog" id="Matematicas" value="Matematicas">
+        <label for="lengprog">Matematicas</label>
+        <input type="checkbox" name="lengprog" id="Historia" value="Historia">
+        <label for="lengprog">Historia</label>
+        <input type="checkbox" name="lengprog" id="Geografia" value="Geografia">
+        <label for="lengprog">Geografia</label>
+        <input type="checkbox" name="lengprog" id="Lengua" value="Lengua">
+        <label for="lengprog">Lengua</label>
+        <br><br>
+        <label for="pass">Nombre</label>
+        <input type="password" name="pass" id="pass">
+        <br>
+        <label for="pass">Apellidos</label>
+        <input type="password" name="pass" id="pass">
+        <br>
+        <label for="pass">Direccion</label>
+        <input type="password" name="pass" id="pass">
+        <br><br>
+        <label for="colorfv">Escoja un color</label>
+        <input type="color" name="colorfv" id="colorfv">
+        <br>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10"
+            placeholder="Utilice este cuadro para escribir"></textarea>
+        <br><br>
+        <label for="fecha2">Elija una fecha:</label>
+        <input type="date" name="fecha2" id="fecha2">
+        <br>
+        <input type="text" name="fnombre" id="fnombre" size="10" list="browser" value="Ingles">
+        <datalist id="browser">
+            <option value="Matematicas"></option>
+            <option value="Historia"></option>
+            <option value="Geografia"></option>
+            <option value="Lengua"></option>
+        </datalist>
+        <br>
+        <label for="hora">Elija una hora:</label>
+        <input type="time" name="hora" id="hora">
+        <br><br>
+        <label for="archivo">Elija un fichero</label>
+        <input type="file" name="archivo" id="archivo" accept=".png,.jpg.,gif">
+        <br><br>
+        <input type="radio" name="lengprog" id="Hombre" value="Hombre">
+        <label for="lengprog">Hombre</label>
+        <input type="radio" name="lengprog" id="Mujer" value="Mujer">
+        <label for="lengprog">Mujer</label>
+    </fieldset>
 
 </body>
+
 </html>
