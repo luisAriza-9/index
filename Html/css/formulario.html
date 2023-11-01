@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atributos de Input</title>
+</head>
+<body>
+<h1>Atributos de Input</h1>
+<hr>
+<br>
+<form action="https://google.com/search">
+<label for="fnombre">Usuario:</label>
+<input type="text" name="fnombre" id="fnombre" maxlength="15" minlength="1" placeholder="Ingrese su nombre completo" size="15" list="browser" value="Chrome" pattern="[a-zA-Z]{1,15}">
+<!-- <datalist id="browser">
+<option value="Chrome"></option>
+<option value="Edge"></option>
+<option value="Opera"></option>
+<option value="Firefox"></option>
+
+
+</datalist> -->
+<label for="pass">Contraseña</label>
+<input type="password" name="pass" id="pass">
+
+
+<br><br>
+
+
+Lenguaje de programación favorito:
+<br>
+<input type="radio" name="lengprog" id="Ada">
+<label for="lengprog">Ada</label><br>
+<input type="radio" name="lengprog" id="Python">
+<label for="lengprog">Python</label><br>
+<input type="radio" name="lengprog" id="Java">
+<label for="lengprog">Java</label><br>
+<input type="radio" name="lengprog" id="JavaScript">
+<label for="lengprog">JavaScript</label>
+
+
+<br><br>
+Pasatiempos
+<br>
+<input type="checkbox" name="Pasatiempos" id="leer">
+<label for="leer">Leer</label><br>
+<input type="checkbox" name="Pasatiempos" id="cine">
+<label for="cine">Cine</label><br>
+<input type="checkbox" name="Pasatiempos" id="gym">
+<label for="gym">Gym</label><br>
+<input type="checkbox" name="Pasatiempos" id="comer">
+<label for="comer">Comer</label><br>
+<input type="checkbox" name="Pasatiempos" id="bailar">
+<label for="bailar">Bailar</label><br>
+<input type="checkbox" name="Pasatiempos" id="programar">
+<label for="programar">Programar</label><br>
+<br>
+<input type="button" value="Ver mensaje" onclick="alert('Feliz Halloween')">
+<br><br>
+<label for="colorFav">Escoja un color: </label>
+<input type="color" name="colorFav" id="colorFav">
+
+
+<br><br>
+<label for="fechanac">Fecha de nacimineto: </label>
+<input type="date" name="fechanac" id="fechanac">
+
+
+<br><br>
+<label for="fechanac">Ingrese una fecha anterior al 2000/01/01: </label>
+<input type="date" name="fechanac" ide ="fechanac" max="1999-12-31">
+
+
+<br><br>
+<label for="fechanac">Ingrese una fecha posterior al 2020/01/01: </label>
+<input type="date" name="fechanac" ide ="fechanac" min="2020-01-02">
+
+
+<br><br>
+<label for="fecha-hora">Fecha y hora de nacimiento:</label>
+<input type="datetime-local" name="fecha-hora" id="fecha-hora">
+
+
+<br><br>
+<label for="iemail">Ingrese su correo electrónico:</label>
+<input type="email" name="iemail" id="iemail">
+
+
+<br><br>
+<input type="image" src="arana.png" alt="araña" width="70px" onclick="alert('No me quiero ir señor Stark')">
+
+
+<br><br>
+<label for="archivo">Escoja un archivo</label>
+<input type="file" name="archivo" id="archivo" accept=".png, .jpg, .pdf, .doc">
+
+
+<br>
+<input type="hidden" name="estadoForm" id="estadoForm" value="completo">
+
+
+<br><br>
+<label for="mesnac">Mes de nacimineto:</label>
+<input type="month" name="mesnac" id="mesnac">
+
+
+<br><br>
+<label for="edad">Edad:</label>
+<input type="number" name="edad" id="edad" min="18" max="28" value="18" step="2">
+
+
+<br><br>
+<label for="volumen">Seleccione el volumen:</label>
+<input type="range" name="volumen" id="volumen" min="10" max="50" step="5">
+
+
+<label for="busqueda">Buscar el Google:</label>
+<input type="search" name="q" id="busqueda">
+
+
+<br><br>
+<label for="comentarios">Escribas sus comentarios:</label><br>
+<textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+
+
+<br>
+<br>
+<input type="submit" value="Enviar">
+<input type="reset" value="Limpiar">
+
+
+</form>
+</body>
+</html>
+
