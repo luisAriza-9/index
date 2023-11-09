@@ -1,20 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sectores muitiples</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>slectores mulitiples</title>
+   <style>
+       .classic{
+           border: 1px solid tomato;
+       }
+       .primary{
+           font-size:  5rem;
+       }
+       .large{
+           width: 50%;
+       }
+       /* esto sireve para afectar las que tenga esas clases  */
+       button.classic.primary.large{
+           color:  limegreen;
+       }
+       button [disabled]{
+           width: 25%;
+       }
+       /* este hace todo al los que tengan disabled */
+       [disabled]{
+           border: 2px solid black;
+           margin-left: 50px;
+
+
+       }
+       /* este hace todo al los que tengan rel y sea nofollow */
+       a[rel="nofollow"]{
+           background: red;
+       }
+       /* este le coloca a todo lo que tenga el data y happy */
+       [data-mood~="happy"]{
+       background:  green;
+       color:  white;
+       padding:  5px;
+       /* este le coloca a todo lo que tenga es */
+       }
+       [lang|="es"]{
+           background: red;
+           color: white;
+           padding:  5px;
+       }
+       /* este le coloca a todo lo que tenga el http:// */
+       a[href]::after{
+           content: "URL: [" attr(href)"]";
+           display: inline-block;
+           color: gray;
+       }
+       a[href^= "http://"]::after{
+           content: "(Pagina insegura);"
+           attr(href);
+           color: red;
+
+
+       }
+   </style>
 </head>
 <body>
-  
-   
-   
-   
-   
-   
-   
-   
-    <button"class="classic primary large" Boton</button> </button>>
+   <button class="classic primary large">Boton</button>
+   <br><br>
+   <button class="classic large" disabled >Boton 2</button>
+   <br><br>
+   <input type="radio" name="miradio" id="miradio" disabled>
+   <br><br>
+   <a href="https//www.campuslands.com" rel="nofollow">Campus lands</a>
+   <br><br>
+   <a href="https//www.google.com">Google.com</a>
+   <br><br>
+   <div data-mood="happy sad">Uno</div>
+   <br><br>
+   <div lang="es-MX en-EN">English</div>
+   <br><br>
+   <a href="https://campuslands.com">Campus lands</a>
+   <br>
+   <a href="http://campuslands.com">Campus lands</a>
+
+   <br><br>
+
+
+
+
 
 </body>
 </html>
+
