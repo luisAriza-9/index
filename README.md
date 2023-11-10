@@ -46,3 +46,4 @@
 
 <h3>      EFECTOS  </h3>
 <a href="../efectos/efectos.html">  efectos  </a>
+<a href="../talleres/maqueta.html"> PROFE UNA CALIFICACION SIMBOLICA</a>
