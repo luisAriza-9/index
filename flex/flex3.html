@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      * {
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+      }
+
+      .caja {
+         border: 1px solid black;
+         display: flex;
+         flex-direction: column;
+         max-width: 20rem; /* Establece un ancho máximo para la caja */
+         margin: 0 auto; /* Centra la caja en la página */
+      }
+
+      .cabeza {
+         border: 1px solid black;
+         background-color: black;
+         color: white;
+         padding: 8px;
+         text-align: center; /* Centra el texto en la cabeza */
+      }
+
+      .item {
+         border: 1px solid black;
+         margin: 8px;
+         padding: 8px;
+      }
+
+      .pie {
+         border: 1px solid black;
+         background-color: gray;
+         color: white;
+         padding: 8px;
+         text-align: center; /* Centra el texto en el pie */
+      }
+   </style>
+</head>
+<body>
+   <div class="caja">
+      <div class="cabeza">Tarjeta Izquierda</div>
+      <div class="item">Contenido del cuerpo</div>
+      <div class="item">Contenido del cuerpo</div>
+      <div class="item">Contenido del cuerpo</div>
+      <div class="pie">Pie</div>
+   </div>
+</body>
+</html>

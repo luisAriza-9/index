@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border: solid 1px rgb(0, 0, 0);
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            grid-template-rows: repeat(3, auto);
+            gap: 10px;
+        }
+        .dentro {
+            border: solid 4px rgb(0, 0, 0);
+            background-color: rgb(138, 138, 138);
+            text-align: center;
+            line-height: 150px;
+        }
+        .c1 {
+            grid-area: 1 / 1 / 3 / 2;
+            background-color: aquamarine;
+        }
+        .c2 {
+            grid-area: 1 / 2 / 3 / 4;
+            background-color: #ff0909;
+        }
+        .c3 {
+            grid-area: 1 / 4 / 2 / 5;
+            background-color: azure;
+        }
+        .c4 {
+            grid-area: 2 / 4 / 3 / 5;
+            background-color: blue;
+        }
+        .c5 {
+            grid-area: 3 / 1 / 4 / 2;
+            background-color: coral;
+        }
+        .c6 {
+            grid-area: 3 / 2 / 4 / 3;
+            background-color: darkcyan;
+        }
+        .c7 {
+            grid-area: 3 / 3 / 4 / 4;
+            background-color: darkgoldenrod;
+        }
+        .c8 {
+            grid-area: 3 / 4 / 4 / 5;
+            background-color: darkmagenta;
+        }
+        .c9 {
+            background-color: darkorange;
+        }
+        .c10 {
+            background-color: darkseagreen;
+        }
+        .c11 {
+            background-color: darkslateblue;
+        }
+        .c12 {
+            background-color: darkslategray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendiendo Grid</h1>
+    <section class="container">
+        <div class="dentro c1">it1</div>
+        <div class="dentro c2">it2</div>
+        <div class="dentro c3">it3</div>
+        <div class="dentro c4">it4</div>
+        <div class="dentro c5">it5</div>
+        <div class="dentro c6">it6</div>
+        <div class="dentro c7">it7</div>
+        <div class="dentro c8">it8</div>
+        <div class="dentro c9">it9</div>
+        <div class="dentro c10">it10</div>
+        <div class="dentro c11">it11</div>
+        <div class="dentro c12">it12</div>
+    </section>
+</body>
+</html>
