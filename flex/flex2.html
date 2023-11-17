@@ -1,48 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-<style>
-   *{
-       padding: 0;
-       margin: 0;
-       box-sizing: border-box;
-   }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Flex # 3</title>
+    <style>
+        * {
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        .flex-container {
+          display: flex;
+          height: 600px;
+          
+        }
+    
+        .item {
+            font-size: 1vh;
+            display: flex;
+            padding: 1vh;
+            justify-content: center;
+            font-size: 18px;
+            
+        }
+    
+        .item1 {
+            background: gray;
+            flex-grow: 1;
+        }
+    
+        .item2 {
+          flex-grow: 2;
+        }
+    
+        .item3 {
+          flex-grow: 1;
+          background: gray;
+        }
+        header {
+            text-align: center;
+            background: rgb(255, 153, 0);
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
 
-
-   header{
-       display: flex;
-       justify-content:center;
-       align-items: center;
-       padding: 1.25rem;
-       background-color: orange;
-   }
-
-
-   aside{
-       flex-grow: 1;
-       padding: 24px;
-       display: flex;
-   }
-
-
-   section{
-       flex-grow: 2;
-       padding: 24px;
-       display: flex;
-   }
-</style>
-</head>
+        }
+      </style>
+    </head>
 <body>
-   <header>
-       <h1>Titulo de la pagina</h1>   
-   </header>
-   <main>
-       <aside>Lateral Izquierda</aside>
-       <section>Zona central</section>
-       <aside>Lateral derecho</aside>
-   </main>
-</body>
-</html>
+<header>
+    <p>Título de la página</p>
+</header>    
+    <div class="flex-container">
+      <div class="item item1">Lateral izquierdo</div>
+      <div class="item item2">Zona central</div>
+      <div class="item item3">Lateral derecho</div>
+    </div>
+    
+    </body>
+    </html>
