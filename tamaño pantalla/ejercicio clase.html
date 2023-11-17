@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navidad Responsive</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body {
+            height: ;
+            text-align: center;
+            display: grid;
+            grid-template-areas:    "titulo" 
+                                    "fn1"
+                                    "fn3" 
+                                    "fn4" 
+                                    "fn2";
+        }
+
+        h1 {
+            grid-area: titulo;
+        }
+
+        img {
+            width: 70%;
+        }
+
+        #fn1 {
+            grid-area: fn1;
+        }
+
+        #fn2 {
+            grid-area: fn2;
+        }
+
+        #fn3 {
+            grid-area: fn3;
+        }
+
+        #fn4 {
+            grid-area: fn4;
+        }
+
+        /* 0 - 480 
+        @media (max-width:480px) {
+            img {
+                width: 50%;
+            }
+        }
+        */
+
+        /* 480 - 768 */
+        @media (min-width:480px) and (max-width:768px) {
+            img {
+                width: 80%;
+            }
+            body {
+                grid-template-areas: "fn1" 
+                                        "fn2" 
+                                        "fn3" 
+                                        "fn4";
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Feliz Navidad</h1>
+    <br>
+    <br>
+    <img src="https://cdn-icons-png.flaticon.com/256/4193/4193253.png" alt="Feliz navidad 1" id="fn1">
+    <img src="https://cdn-icons-png.flaticon.com/256/4193/4193299.png" alt="Feliz navidad 2" id="fn2">
+    <img src="https://cdn-icons-png.flaticon.com/256/4193/4193257.png" alt="Feliz navidad 3 id="fn3">
+    <img src="https://cdn-icons-png.flaticon.com/256/4193/4193265.png" alt="Feliz navidad 4" id="fn4">
+</body>
+</html>
