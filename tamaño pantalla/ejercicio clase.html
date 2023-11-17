@@ -9,15 +9,11 @@
             box-sizing: border-box;
             margin: 0;
         }
+
         body {
-            height: ;
             text-align: center;
             display: grid;
-            grid-template-areas:    "titulo" 
-                                    "fn1"
-                                    "fn3" 
-                                    "fn4" 
-                                    "fn2";
+            grid-template-areas: "titulo" "fn1" "fn3" "fn4" "fn2";
         }
 
         h1 {
@@ -26,6 +22,7 @@
 
         img {
             width: 70%;
+            margin: 10px; /* Add margin for spacing between images */
         }
 
         #fn1 {
@@ -44,24 +41,13 @@
             grid-area: fn4;
         }
 
-        /* 0 - 480 
-        @media (max-width:480px) {
-            img {
-                width: 50%;
-            }
-        }
-        */
-
         /* 480 - 768 */
         @media (min-width:480px) and (max-width:768px) {
             img {
                 width: 80%;
             }
             body {
-                grid-template-areas: "fn1" 
-                                        "fn2" 
-                                        "fn3" 
-                                        "fn4";
+                grid-template-areas: "fn1" "fn2" "fn3" "fn4";
             }
         }
     </style>
@@ -72,7 +58,7 @@
     <br>
     <img src="https://cdn-icons-png.flaticon.com/256/4193/4193253.png" alt="Feliz navidad 1" id="fn1">
     <img src="https://cdn-icons-png.flaticon.com/256/4193/4193299.png" alt="Feliz navidad 2" id="fn2">
-    <img src="https://cdn-icons-png.flaticon.com/256/4193/4193257.png" alt="Feliz navidad 3 id="fn3">
+    <img src="https://cdn-icons-png.flaticon.com/256/4193/4193257.png" alt="Feliz navidad 3" id="fn3"> <!-- Fix the missing closing quote -->
     <img src="https://cdn-icons-png.flaticon.com/256/4193/4193265.png" alt="Feliz navidad 4" id="fn4">
 </body>
 </html>
