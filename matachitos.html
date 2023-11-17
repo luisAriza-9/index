@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 1</title>
+    <style>
+        body{
+            display: grid;
+            box-sizing: border-box;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+        #a1{
+            background-image: url(./1.png);
+            height: 256px;
+            width: 256px;
+        }
+        #a2{
+            background-image: url(./2.png);
+            height: 256px;
+            width: 256px;
+        }
+        #a3{
+            background-image: url(./3.png);
+            height: 256px;
+            width: 256px;
+        }
+        #a4{
+            background-image: url(./4.png);
+            height: 256px;
+            width: 256px;
+        }
+        @media (max-width:480px) {
+            #a1{
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+            #a2{
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+            #a3{
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+            #a4{
+                grid-column: 1/2
+
+            }
+        }
+         @media (min-width:480px) and (max-width:768px) {
+            #a1{
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+            #a2{
+                grid-column: 2/3;
+                grid-row: 1/2;
+            }
+            #a3{
+                grid-column: 1/2;
+                grid-row: 2/3;
+
+            }
+            #a4{
+                grid-column: 2/3;
+            }
+        } 
+
+    </style>
+</head>
+<body>
+    <div id="a1"> </div>
+    <div id="a2"></div>
+    <div id="a3"></div>
+    <div id="a4"></div>
+</body>
+</html>
