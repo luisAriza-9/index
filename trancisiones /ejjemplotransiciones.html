@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo trancsiciones </title>
+<style>
+    .caja {
+        margin-top: 50px;
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+        transition: all.2s 2s;
+        }
+        .caja:hover{
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            rotate: 180deg;
+            border-radius: 50%;
+            transition: all 2s 2s;
+}
+
+
+
+
+.caja1 {
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    }
+    .caja1:hover{
+        background-color: aqua;
+        width: 200px;
+        height: 200px;
+        rotate: 180deg;
+        transition-property: 50%;
+        transition: 2s;
+        transition-delay: 2s;
+        border-radius: 50%;
+}
+
+
+.caja2 {
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    }
+    .caja2:hover{
+        background-color: aqua;
+        width: 200px;
+        height: 200px;
+        rotate: 180deg;
+        transition-property: 50%;
+        transition: 2s;
+        transition-delay: 2s;
+        border-radius: 50%;
+        transition: width 0.2s 15s, height 2s 5s, background-color 6s 10s, rote 8s, border- radio 6s, 5s;
+}
+
+.parent{
+    width: 12em;
+    min-width: 12em;
+    padding: 3px;
+    margin-bottom: 4px;
+    background-color: black;
+    color: white;
+    transition-property: all;
+    transition-duration: 7s;
+    }
+
+
+
+    .parent:hover> div[class]{
+        width: 90vw;
+        min-width: 24em;
+        padding: 3px;
+        
+        background-color: rgb(139, 105, 32);
+        color: rgb(255, 255, 255);
+        transition-property: all;
+        transition-duration: 2s;
+        }
+    
+.ease{
+    transition-timing-function: ease;
+    }
+    .easin{
+
+transition-timing-function: ease-in;
+}
+    
+.easeout{
+    transition-timing-function: ease-out;
+
+}
+    
+.easeinout{
+    
+    transition-timing-function: ease-in-out;
+    }
+    
+.linear{
+
+ transition-timing-function: linear;
+ }
+.cubic-beizer {
+    transition-timing-function: cubic-bezier(0.2,-2,0.8,2);
+    }
+    
+
+
+
+</style>
+
+</head>
+<body>
+    
+<div class="caja"></div>
+<br><br>
+<div class="caja1"></div>
+
+<br><br>
+
+<div class="caja2"></div>
+<br><br>
+
+<div class="parent">
+    <div class="ease">Ease</div>
+    <div class="easein">Ease-in</div>
+    <div class="easeout">Ease-out</div>
+    <div class="easeinout">Ease-in-out</div>
+    <div class="linear">linear</div>
+    
+    <!--FUNCION PERSONALIZADA-->
+    
+    <div class="cubic-beizer">cubic-beizer</div>
+</div>
+
+<!--FUNCION PERSONALIZADA-->
+
+
+
+
+
+
+</body>
+</html>
