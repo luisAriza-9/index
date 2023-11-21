@@ -1,0 +1,42 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(https://i.pinimg.com/564x/64/7f/96/647f9698ec293fb12dff9bf3acc3dd14.jpg);
+    background-size: contain;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #0a0a0a;
+    color: #080808;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos de la sección "Nosotros" */
+.nosotros {
+    
+    padding: 50px 0;
+    text-align: center;
+}
+
+.nosotros-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nosotros h1 {
+    font-size: 36px;
+    color: #0a0a0a;
+}
+
+.nosotros p {
+    font-size: 18px;
+    color: #000000;
+}
+
+.fondo{
+
+}
