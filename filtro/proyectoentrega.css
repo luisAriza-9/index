@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#cabeza{
+    position: fixed;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+}
+
+.logo{
+    position: relative;
+    right: 570px;
+    padding: 5px;
+}
+
+
+a{
+    position: relative;
+    text-align: right;
+    text-decoration: none;
+    left: 570px;
+    bottom: 15px;
+    margin: 1rem;
+}
+
+a:hover{
+    color: #5E5D6E ;
+}
+
+
+#seccion1{
+    background-image: url(./imagenes/enium-fondo.jpg);
+
+}
+
+.imagen{
+    position: relative;
+    left: 600px;
+}
+
+
+seccion2{
+    border: 10px solid black;
+    
+}
+
+.caja{
+    position: relative;
+    top: 140px;
+    left: 600px;
+    border: 1px solid;
+    width: 700px;
+    height: fit-content;
+    border: none;
+}
+
+.sub{
+    text-align: center;
+    padding: 5px;
+}
+
+.texto{
+    text-align: center;
+    font-size: 1rem;
+    
+
+}
+
+.boton{
+    position: relative;
+    left: 250px;
+    top: 20px;
+    width: 150px;
+    height: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    gap: 1rem;
+}
+
+.boton:hover{
+    transition: background 0.5s linear;
+    background-color: #4A4959;
+    font-size: 1.1rem;
+}
+
+.sub2{
+    text-align: center;
+    padding: 60px;
+    color: white;
+}
+
+.caja2{
+    background-color: #1C1D22;
+    position: relative;
+    top: 300px;
+    height: fit-content;
+
+}
+
+.fa-star, .fa-thumbs-up, .fa-check{
+    font-size: 2.7em;
+    color: white;
+}
+
+.articulo1{
+    position: relative;
+    left: 450px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.articulo2{
+    position: relative;
+    left: 770px;
+    bottom: 205px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.articulo3{
+    position: relative;
+    left: 1100px;
+    bottom: 410px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.fa-star{
+    position: relative;
+    left: 580px;
+}
+
+.fa-thumbs-up{
+    position: relative;
+    left: 900px;
+    bottom: 205px;
+}
+
+.fa-check{
+    position: relative;
+    left: 1230px;
+    bottom: 405px;
+}
+
+.caja3{
+    background-color: white;
+    position: relative;
+    top: 500px;
+    width: 1000px;
+    height: 100px;
+}
+
+.sub3{
+    position: relative;
+    left: 850px;
+    bottom: 150px;
+}
+
+.imagen2{
+    position: relative;
+    left: 300px;
+    width: 500px;
+    height: 200px;
+}
+
+.imagen3{
+    position: relative;
+    left: 900px;
+    bottom: 280px;
+    width: 500px;
+    height: 200px;
+}
+
+.articulo4{
+    position: relative;
+    left: 300px;
+    width: 500px;
+}
+
+.articulo5{
+    position: relative;
+    left: 900px;
+    bottom: 280px;
+    width: 500px;
+}
+
+.caja4{
+    background-color: black;
+    position: relative;
+    top: 800px;
+    height: 210px;
+}
+
+.fa-sta{
+    width: auto;
+    background-color: white;
+}
